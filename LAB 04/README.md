@@ -14,30 +14,24 @@ This lab looks at how data types and memory layout work inside an operating syst
 
 ## Programs
 
-| Task  | Folder  | File     | Description 
-|-------|---------|----------|
-| Lab 1 | `task1` | `lab1.c` | Prints the size of `char`, `int`, `float`, `double`, `long`, pointer, `unsigned int`, and `long long` 
-| Lab 2 | `task2` | `lab2.c` | Prints addresses of a global initialized, global uninitialized, local, and `malloc` variable, then the stack-heap difference 
+- **Lab 1** (`task1/lab1.c`): Prints the size of `char`, `int`, `float`, `double`, `long`, pointer, `unsigned int`, and `long long`.
+- **Lab 2** (`task2/lab2.c`): Prints addresses of a global initialized, global uninitialized, local, and `malloc` variable, then the stack-heap difference.
 
 ## Memory Segments
 
-| Segment | Stores                                              | Variable in `lab2.c` 
-|---------|-----------------------------------------------------|
-| Text    | Machine code                                        |  none 
-| Data    | Initialized globals and statics                     | `global_init` 
-| BSS     | Uninitialized globals and statics (zeroed at start) | `global_uninit` 
-| Heap    | Memory from `malloc`, grows upward                  | `heap_var` 
-| Stack   | Local variables and function calls, grows downward  | `local_var` 
+- **Text**: Machine code.
+- **Data**: Initialized globals and statics (`global_init` in `lab2.c`).
+- **BSS**: Uninitialized globals and statics, zeroed at start (`global_uninit`).
+- **Heap**: Memory from `malloc`, grows upward (`heap_var`).
+- **Stack**: Local variables and function calls, grows downward (`local_var`).
 
 ## Commands Used
 
-| Category | Command              | Purpose 
-|----------|----------------------|
-| Files    | `mkdir`, `cd`        | Create and enter folders 
-| Files    | `nano lab1.c`        | Write or edit a C file 
-| Files    | `cat lab1.c`         | View file contents 
-| GCC      | `gcc lab1.c -o lab1` | Compile the program 
-| Run      | `./lab1`             | Run the program 
+- `mkdir`, `cd`: Create and enter folders
+- `nano lab1.c`: Write or edit a C file
+- `cat lab1.c`: View file contents
+- `gcc lab1.c -o lab1`: Compile the program
+- `./lab1`: Run the program
 
 ## Useful Commands
 

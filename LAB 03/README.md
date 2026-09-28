@@ -14,25 +14,26 @@ This lab looks at what happens after a C program is compiled: how the operating 
 
 ## Programs
 
-| Task | Folder  | File               | Description 
-|------|---------|--------------------|
-| 1    | `task1` | `task1_alive.c`    | Prints "I am starting....", sleeps for 30 seconds, then prints "I am finished." 
-| 2    | `task2` | `task2_identity.c` | Prints its own PID and PPID using `getpid()` and `getppid()`, then sleeps for 20 seconds 
-| 3    | `task3` | `task3_exit.c`     | Reads a number; prints "Success!" and returns 0 if positive, otherwise "Failure!" and returns 1 
-| 4    | `task4` | `task4_input.c`    | Reads a name with `scanf()` and prints a greeting 
-| 5    | `task5` | `task5_control.c`  | Prints its PID, asks whether to continue; 1 continues (exit 0), 0 exits (exit 1) 
+- **Task 1** (`task1/task1_alive.c`): Prints "I am starting....", sleeps for 30 seconds, then prints "I am finished."
+- **Task 2** (`task2/task2_identity.c`): Prints its own PID and PPID using `getpid()` and `getppid()`, then sleeps for 20 seconds.
+- **Task 3** (`task3/task3_exit.c`): Reads a number; prints "Success!" and returns 0 if positive, otherwise "Failure!" and returns 1.
+- **Task 4** (`task4/task4_input.c`): Reads a name with `scanf()` and prints a greeting.
+- **Task 5** (`task5/task5_control.c`): Prints its PID and asks whether to continue; 1 continues (exit 0), 0 exits (exit 1).
 
 ## Commands Used
 
-| Category    | Command                       | Purpose 
-|-------------|-------------------------------|
-| Process     | `ps`                          | Show processes for the current shell 
-| Process     | `ps aux`                      | Show all processes with user, PID, CPU, and memory 
-| Process     | `ps aux | grep task_alive`    | Filter the list to one program 
-| Process     | `ps -p <PID> -o pid,ppid,cmd` | Show PID, PPID, and command for one process 
-| GCC         | `gcc file.c -o name`          | Compile source into an executable 
-| Run         | `./name`                      | Run the program 
-| Exit status | `echo $?`                     | Print the exit status of the last program 
+Process:
+- `ps`: Show processes for the current shell
+- `ps aux`: Show all processes with user, PID, CPU, and memory
+- `ps aux | grep task_alive`: Filter the list to one program
+- `ps -p <PID> -o pid,ppid,cmd`: Show PID, PPID, and command for one process
+
+Compile and run:
+- `gcc file.c -o name`: Compile source into an executable
+- `./name`: Run the program
+
+Exit status:
+- `echo $?`: Print the exit status of the last program
 
 ## Useful Commands
 

@@ -14,22 +14,18 @@ This lab covers the basics of C programming on Ubuntu (WSL) and shows how a prog
 
 ## Programs
 
-| Task  |  Folder | File | Description  |
-|-------|---------|---------------------|
-| 1 & 2 | `task1` | `helloworld.c`      | Prints "Hello, World!"; exit status checked with `return 0` and `return 1`
-| 3     | `task2` | `userinput.c`       | Reads an integer with `scanf` and prints it back
-| 3     | `task3` | `userinfo.c`        | Reads name, age, and height and prints formatted output
-| 4     | `task4` | copies of the above | Step-by-step compilation of each program
-| 5     | `task5` | `return.c`          | Returns **50**; confirmed with `echo $?`
+- **Task 1 & 2** (`task1/helloworld.c`): Prints "Hello, World!"; exit status checked with `return 0` and `return 1`.
+- **Task 3** (`task2/userinput.c`): Reads an integer with `scanf` and prints it back.
+- **Task 3** (`task3/userinfo.c`): Reads name, age, and height and prints formatted output.
+- **Task 4** (`task4`): Copies of the above, compiled step by step.
+- **Task 5** (`task5/return.c`): Returns **50**; confirmed with `echo $?`.
 
 ## Four Stages of Compilation
 
-| Stage            | Command                   | Output                 |
-|------------------|---------------------------|------------------------|
-| 1. Preprocessing | `gcc -E file.c -o file.i` | `.i` (expanded source) |
-| 2. Compilation   | `gcc -S file.i -o file.s` | `.s` (assembly)        |
-| 3. Assembly      | `gcc -c file.s -o file.o` | `.o` (object file)     |
-| 4. Linking       | `gcc file.o -o file`      | executable             |
+1. **Preprocessing**: `gcc -E file.c -o file.i` produces a `.i` file (expanded source).
+2. **Compilation**: `gcc -S file.i -o file.s` produces a `.s` file (assembly).
+3. **Assembly**: `gcc -c file.s -o file.o` produces a `.o` file (object file).
+4. **Linking**: `gcc file.o -o file` produces the executable.
 
 Run with `./file`, then check the result with `echo $?`.
 

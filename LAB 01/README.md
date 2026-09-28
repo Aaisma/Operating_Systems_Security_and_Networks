@@ -14,31 +14,32 @@ This lab covers the basics of working on the Linux command line using Ubuntu (WS
 
 ## Tasks
 
-| Task            | Folder      | File           | Description
-|-----------------|-------------|----------------|
-| File Operations | `linux_lab` | `greeting.txt` | Created with nano, viewed with `cat`, copied to `backup.txt`, renamed to `old_greeting.txt`, then deleted |
-| File Operations | `linux_lab` | `temp_dir`     | Directory created with `mkdir` and removed with `rmdir` |
-| APT Management  | `linux_lab` |  none          | Updated package list, checked `build-essential`, verified GCC, searched `python3` |
-| C Compilation   | `linux_lab` | `hello.c`      | Adds two integers; compiled normally and with `-Wall`, then edited from 10 and 5 to 100 and 200 |
-| Cleanup         | `week1`     | `linux_lab`    | Listed contents with `ls -lh`, viewed `hello.c`, removed directory with `rm -rf` |
+- **File Operations** (`linux_lab/greeting.txt`): Created with nano, viewed with `cat`, copied to `backup.txt`, renamed to `old_greeting.txt`, then deleted.
+- **File Operations** (`linux_lab/temp_dir`): Directory created with `mkdir` and removed with `rmdir`.
+- **APT Management**: Updated package list, checked `build-essential`, verified GCC, searched `python3`.
+- **C Compilation** (`linux_lab/hello.c`): Adds two integers; compiled normally and with `-Wall`, then edited from 10 and 5 to 100 and 200.
+- **Cleanup** (`week1/linux_lab`): Listed contents with `ls -lh`, viewed `hello.c`, removed the directory with `rm -rf`.
 
 ## Commands Used
 
-| Category | Command                                   | Purpose 
-|----------|-------------------------------------------|
-| Files    | `mkdir`, `cd`                             | Create and enter the lab directory 
-| Files    | `nano greeting.txt`                       | Create and edit a file 
-| Files    | `cat greeting.txt`                        | View file content 
-| Files    | `cp`, `mv`                                | Copy and rename 
-| Files    | `rm`, `rmdir`, `rm -rf`                   | Remove files and directories 
-| Files    | `ls -l`                                   | Check permissions 
-| APT      | `sudo apt update`                         | Refresh package list 
-| APT      | `sudo apt install build-essential`        | Install C toolchain 
-| APT      | `apt search python3`                      | Search for packages 
-| GCC      | `gcc --version`                           | Verify GCC 
-| GCC      | `gcc hello.c -o hello_program`            | Compile 
-| GCC      | `gcc -Wall hello.c -o hello_program_warn` | Compile with all warnings 
-| GCC      | `./hello_program`                         | Run the program 
+Files:
+- `mkdir`, `cd`: Create and enter the lab directory
+- `nano greeting.txt`: Create and edit a file
+- `cat greeting.txt`: View file content
+- `cp`, `mv`: Copy and rename
+- `rm`, `rmdir`, `rm -rf`: Remove files and directories
+- `ls -l`: Check permissions
+
+APT:
+- `sudo apt update`: Refresh package list
+- `sudo apt install build-essential`: Install C toolchain
+- `apt search python3`: Search for packages
+
+GCC:
+- `gcc --version`: Verify GCC
+- `gcc hello.c -o hello_program`: Compile
+- `gcc -Wall hello.c -o hello_program_warn`: Compile with all warnings
+- `./hello_program`: Run the program
 
 ## Useful Commands
 
